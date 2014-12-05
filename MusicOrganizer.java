@@ -59,4 +59,16 @@ public class MusicOrganizer
             files.remove(index);
         }
     }
+    
+    /**
+     * comprueba que el indice es valido
+     */
+    public void checkIndex(int index)
+    {
+        if((index < 0) || ( index >= files.size()))
+        {
+            System.out.println("error, ramgo no valido");
+        }
+    }
+   
 }
