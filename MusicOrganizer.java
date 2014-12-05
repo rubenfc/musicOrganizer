@@ -70,5 +70,17 @@ public class MusicOrganizer
             System.out.println("error, ramgo no valido");
         }
     }
-   
+    
+   /**
+    * devuelve un valor booleano en función de si su parámetro entero es un índice válido o no 
+    */
+   public boolean validIndex(int index)
+   {
+       boolean valido = true;
+       if((index < 0) || ( index >= files.size()))
+       {
+           valido = false;          
+       }
+       return valido;
+   }
 }
